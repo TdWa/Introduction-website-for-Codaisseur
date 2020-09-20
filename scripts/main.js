@@ -1,20 +1,18 @@
 //alert('yes!');
 
 const b1 = document.getElementById('b1');
-const b2 = document.getElementById('b2');
-const body = document.body;
+const root = document.documentElement;
 
 b1.onclick = () => {
-  b1.textContent = 'Well well well...'
-  body.style.setProperty('background-color', 'azure');
+  if (b1.textContent === 'Dark Theme') {
+    b1.textContent = 'Light Theme'
+    root.style.setProperty('--color1', 'rgb(61, 58, 58)');
+    root.style.setProperty('--color2', 'rgb(61, 158, 58)');
+    root.style.setProperty('--color3', 'rgb(61, 58, 158)');  
+  } else {
+    b1.textContent = 'Dark Theme'
+    root.style.setProperty('--color1', 'rgb(240, 255, 240)');
+    root.style.setProperty('--color2', 'rgb(230, 223, 223)');
+    root.style.setProperty('--color3', 'rgb(109, 116, 180)'); 
+  }
 }
-
-b2.onclick = () => {
-  b2.textContent = 'Look what the cat\'s dragged in...'
-  body.style.setProperty('background-color', 'rosybrown');
-}
-
-
-// body.onclick = () => {
-//   body.style.setProperty('background-color', 'azure');
-// }

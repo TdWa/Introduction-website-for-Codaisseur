@@ -4,7 +4,10 @@
 }
 
 :root {
-  --color1: rosybrown;
+  --color1: rgb(240, 255, 240);
+  --color2: rgb(230, 223, 223);
+  --color3: rgb(109, 116, 180);
+  --color99: rgb(61, 58, 58);
 }
 
 body {
@@ -12,26 +15,34 @@ body {
   border: 1px solid black;
 }
 
-h1 {
-  color: rgb(81, 81, 161);
+header {
+  width: 100%;
+  background-color: var(--color3);
 }
 
 nav {
-  background-color: gray;
-  font-size: 0;
+  width: 600px;
+  margin: 0 auto;
+  font-size: 20px;
 }
 
-nav li {
-  list-style-type: circle; 
-  display: inline; 
-  padding: 20px;
-  margin: 50px;
-  background-color: yellow;
-  font-size: 50px;
-} 
+section {
+  width: 600px;
+  height: 500px;
+  margin: 0 auto;
+  border: 1px solid black;
+}
 
-a {
-  background-color: chartreuse;
-  /* border: 1px solid black; */
-  font-size: 50px;
+#projects {
+  background-color: var(--color2);
+}
+
+footer {
+  width: 100%;
+  background-color: var(--color3);
+  text-align: center;
+}
+
+h1 {
+  font-size: 25px;
 }
