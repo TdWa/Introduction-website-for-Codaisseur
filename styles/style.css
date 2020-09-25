@@ -20,21 +20,39 @@ header {
   background-color: var(--color3);
 }
 
-nav {
-  width: 600px;
+/* nav {
+  max-width: 1000px;
   margin: 0 auto;
   font-size: 20px;
-}
+} */
 
-section {
-  width: 600px;
-  height: 500px;
+section, nav {
+  width: 90%;
+  min-width: 480px;
+  max-width: 1000px;
+  min-height: 400px;
   margin: 0 auto;
   border: 1px solid black;
 }
 
+#about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 #projects {
   background-color: var(--color2);
+}
+
+#projects-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  border: 10px solid pink;
+}
+
+.project {
+  border: 1px solid red;
+  height: 100px;
 }
 
 footer {
@@ -44,5 +62,16 @@ footer {
 }
 
 h1 {
-  font-size: 25px;
+  font-size: 30px;
+}
+
+p {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+#img1 {
+  min-width: 200px;
+  min-height: 350px;
+  border: 1px solid pink;
 }
