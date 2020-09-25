@@ -10,27 +10,39 @@
       <h1>Tim de Waard</h1>
       <nav>
         <ul>
-          <li>About</li>
-          <li>Projects</li>
-          <li>Contact</li>
+          <a href="#about"><li>About</li></a>
+          <a href="#projects"><li>Projects</li></a>
+          <a href="#contact"><li>Contact</li></a>
+          <button id="b1">Dark Theme</button>
         </ul>
-        <button id="b1">Dark Theme</button>
       </nav>
     </header>
     <main>
       <section id="about">
-        <div>
-          <img id="img1" src="#" alt="picture of me">
+        <div id="portrait" class="about">
+          <img id="img1" src="#" alt="Me in Italy (2020)">
         </div>
-        <div>
-          <h2>About</h2>
-          <p>
-            I like this and that. testtyyyyyest <br>
-            I like this and that. testtyyyyyest <br>
-            I like this and that. testtyyyyyest <br>
-            I like this and that. testtyyyyyest <br>
-            I like this and that. testtyyyyyest <br>
-          </p>
+        <div id="intro" class="about">
+          <div>
+            <h2>About</h2>
+            <p>
+              Hey everyone, I'm Tim from the Netherlands. <br> I used to be a law student specialising
+              in Law and Technology, but I gradually discovered that I find technology itself 
+              a lot more fun and interesting than arguing about it as a lawyer! (shocker)<br>
+              This year I decided to chase my dream of becoming a programmer and I'm really excited to 
+              start making it happen at Codaisseur and meet you all on October 5th.
+            </p>
+          </div>
+        </div>
+        <div id="interests" class="about">
+          <div>
+            <h3>Interests/hobbies whatever</h3>
+            <ul>
+              <li>Music</li>
+              <li>City & Nature walking</li>
+              <li>Reading? Sports? Politics? Tech?</li>
+            </ul>
+          </div>
         </div>
       </section>
 
@@ -39,8 +51,7 @@
           <h2>Projects</h2>
         </div>
         <div id="projects-items">
-          <div class="project">A</div>
-          <div class="project">B</div>
+          <div class="project">Tetris</div>
           <div class="project">To be filled with you!</div>
         </div>
       </section>
