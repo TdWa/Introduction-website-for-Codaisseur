@@ -3,45 +3,60 @@
   margin: 0px;
   /* border: 1px solid black; */
   color: var(--textColor);
+  font-family: 'Times New Roman', Times, serif;
 }
 
 :root {
   --color1: rgb(230, 230, 230);
-  --color2: rgb(230, 223, 223);
-  --color3: rgb(109, 116, 180);
-  --textColor: rgb(10, 10, 10);
+  --color2: rgb(166, 201, 162);
+  --color3: rgb(255, 238, 0);
+  --textColor: rgb(20, 20, 20);
   --color99: rgb(61, 58, 58);
 }
 
 body {
   background-color: var(--color1);
-  border: 1px solid black;
 }
 
-#artstrip {
+.artstrip {
   width: 100%;
   height: 200px;
   background-image: url("../images/interests.png");
-  background-size: 400px 200px;
+  background-size: 800px 200px;
+  border-top: 3px solid var(--color99);
+  border-bottom: 3px solid var(--color99);
 }
 
 header {
   text-align: right;
+  background-color: var(--color3)
 }
 
 nav li, nav button {
   display: inline-block;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: bold;
 }
 
-section, header, h1{
+button {
+  background-color: var(--color1);
+  padding: 8px;
+  border: 3px solid var(--color99);
+  border-radius: 10px;
+}
+
+section, nav, footer p {
   width: 90%;
   min-width: 480px;
-  max-width: 1200px;
+  max-width: 1100px;
   margin: 0 auto;
 }
 
 #about {
-  min-height: 90vh;
+  min-height: 730px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas: 
@@ -53,19 +68,35 @@ section, header, h1{
   display: grid;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 #portrait {
   grid-area: portrait; 
+  text-align: center;
 }
 
 #intro {
   grid-area: intro;
+  padding: 0 10%;
 }
 
 #interests {
   grid-area: interests;
   text-align: center;
+}
+
+.text {
+  text-align: left;
+  font-size: 20px;
+  margin: 0 10%;
+}
+
+.bullet {
+  height: 10px;
+  width: 30px;
+  background-color: var(--color3);
+  display: inline-block;
 }
 
 @media (max-width: 800px) {
@@ -78,46 +109,89 @@ section, header, h1{
   }
 }
 
+@media (max-height: 1018px) {
+  #about {
+    min-height: 730px;
+    /* background-color: yellow; */
+  }
+  /* :root {
+    --color1: rgb(194, 78, 78);
+  } */
+}
+
 #projects {
   background-color: var(--color2);
 }
 
 #projects-items {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 300px));
+  grid-template-columns: repeat(auto-fit, 300px);
   justify-content: space-evenly;
 }
 
 .project {
+  width: 300px;
+  height: 200px;
+  background-color: var(--color3);
+  margin: 20px auto;
+}
+
+#tetris {
+  display: grid;
+  grid-template-columns: 100px 200px;
+  grid-template-rows: 100px 100px;
+}
+
+#img2 {
   height: 100px;
+}
+
+#tetris-text {
+  grid-area: 2/1/3/3;
+}
+
+#contact {
+  margin: 30px auto;
+}
+
+#contact-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-evenly;
 }
 
 footer {
   width: 100%;
-  height: 200px;
-  background-image: url("../images/interests.png");
-  background-size: 400px 200px;
   text-align: center;
+  background-color: var(--color3);
 }
 
-.pop {
-  background-color: white;
-  padding: 5px;
-  border-radius: 25%;
+footer {
+  padding: 15px auto;
+  text-align: right;
 }
 
 h1 {
-  font-size: 25px;
-  text-align: left;
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+h2 {
+  margin: 15px 0;
 }
 
 p {
+  text-align: left;
   font-size: 18px;
   line-height: 30px;
 }
 
+footer p {
+  text-align: right;
+}
+
 #img1 {
-  min-width: 200px;
-  min-height: 350px;
-  border: 1px solid pink;
+  width: 60%;
+  border-radius: 10%;
 }

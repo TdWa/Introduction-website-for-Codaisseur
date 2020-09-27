@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="icon" type="image/png" href="images/favicon.png"/>
     <link href="styles/style.css" rel="stylesheet">
     <meta charset="utf-8">
     <title>Tim de Waard</title>
   </head>
   <body>
-    <div id="artstrip"></div>
+    <!-- <div class="artstrip"></div> -->
     <header>
       <nav>
-        <h1>Tim de Waard</h1>
         <ul>
-          <a href="#about"><li>About</li></a>
+          <a href="#interests"><li>Interests</li></a>
           <a href="#projects"><li>Projects</li></a>
           <a href="#contact"><li>Contact</li></a>
           <button id="b1">Dark Theme</button>
@@ -21,13 +21,16 @@
     <main>
       <section id="about">
         <div id="portrait" class="center">
-          <img id="img1" src="#" alt="Me in Italy (2020)">
+          <div>
+            <h1>Tim de Waard</h1>
+            <img id="img1" src="images/meinitaly.png" alt="Me in Italy (2020)">
+          </div>
         </div>
         <div id="intro" class="center">
           <div>
             <h2>About</h2>
             <p>
-              Hey everyone, I'm Tim from the Netherlands. <br> I used to be a law student specialising
+              Hey everyone, I'm Tim. I'm from the Netherlands. I used to be a law student specialising
               in Law and Technology, but I gradually discovered that I find technology itself 
               a lot more fun and interesting than arguing about it as a lawyer! (shocker)<br>
               This year I decided to chase my dream of becoming a programmer and I'm really excited to 
@@ -35,40 +38,68 @@
             </p>
           </div>
         </div>
-        <div id="interests" class="center">
-          <div>
-            <h3>Interests/hobbies whatever</h3>
-            <ul>
-              <li>Music</li>
-              <li>City & Nature walking</li>
-              <li>Reading? Sports? Politics? Tech?</li>
-            </ul>
+        <div id="interests">
+          <h2>Interests</h2>
+          <div class="text">
+            I tried to make some sketches around this page to represent things I enjoy.
+            I have a lot of different interests, but some of the main things I like to do when not working are:<br><br>
+            <div class="bullet"></div>&nbsp;&nbsp;Going for walks through nature or (foreign) cities. While outside I often go through code or other projects
+            in my head. It helps me to order things and find creative solutions more easily than when staring at a screen.
+            Or otherwise I set my mind on other stuff or nothing in particular and just enjoy the surroundings.<br><br>
+            <div class="bullet"></div>&nbsp;&nbsp;I love music. I like discovering new artists and also play a little guitar myself 
+            (I'm not very good but it's still a lot of fun!). Some day I also want to learn to play the piano.<br><br>
+            <div class="bullet"></div>&nbsp;&nbsp;And finally I just always like to learn and discover new things 
+            through books, online articles, videos, podcasts or personal experience... I find almost anything can be fun
+            and interesting when you delve into it. The last few months I've been learning Italian for at least
+            a few minutes per day.
           </div>
         </div>
       </section>
 
       <section id="projects">
         <div id="projects-header">
-          <h2>Projects</h2>
+          <h2 class="center">Projects</h2>
         </div>
         <div id="projects-items">
-          <div class="project">Tetris</div>
-          <div class="project">To be filled with you!</div>
+          <div id="tetris" class="project">
+            <div style="background-color: aqua;">
+              <a href="https://tdwa.github.io/" target="_blank">
+                <img id="img2" src="images/tetris.png" alt="tetris game">
+              </a>
+            </div>
+            <div class="center">
+              Tetris with Phaser.js
+            </div>
+            <div id="tetris-text">
+              My first code practice project was building a Tetris game. The code is a bit of a mess
+              but it seems to work :) It was a lot of fun to make and I learned a lot from it. You can
+              play it by clicking the image if you like.
+            </div>
+          </div>
+          <div class="project center">I'm looking forward to doing new projects with you!</div>
         </div>
       </section>
 
-      <section id="contact">
-        <h2>Contact</h2>
-        linkedIn & email
+      <section id="contact" class="center">
+        <h2 class="center">Contact</h2>
+        <div id="contact-container">
+          <div class="center">
+            Email<br>t.a.dewaard@gmail.com
+          </div>
+          <div class="center">
+            Phone<br>+31 6 83 33 33 52
+          </div>
+          <a class="center" href="https://www.linkedin.com/in/tim-de-waard-9058881b4/" target="_blank">
+            LinkedIn
+          </a>
+        </div>
       </section>
     </main>
-
-    <footer class="center">
-      <div class="pop">
-        Tim de Waard 2020
-      </div>
+    
+    <footer>
+      <p>Tim de Waard 2020</p> 
     </footer>
-
+    <div class="artstrip"></div>
     <script src="scripts/main.js"></script>
   </body>
 </html>
