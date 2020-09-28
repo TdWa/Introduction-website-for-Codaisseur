@@ -1,13 +1,21 @@
+@font-face {
+	font-family: 'Roboto Flex';
+	src: url('RobotoFlex-VF.woff2') format('woff2 supports variations'),
+       url('RobotoFlex-VF.woff2') format('woff2-variations');
+	font-weight: 100 1000;
+	font-stretch: 25% 151%;
+}
+
 * {
   padding: 0px;
   margin: 0px;
   /* border: 1px solid black; */
   color: var(--textColor);
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'Roboto Flex', Times, serif;
 }
 
 :root {
-  --color1: rgb(230, 230, 230);
+  --color1: rgb(247, 245, 238);
   --color2: rgb(166, 201, 162);
   --color3: rgb(255, 238, 0);
   --textColor: rgb(20, 20, 20);
@@ -18,18 +26,10 @@ body {
   background-color: var(--color1);
 }
 
-.artstrip {
-  width: 100%;
-  height: 200px;
-  background-image: url("../images/interests.png");
-  background-size: 800px 200px;
-  border-top: 3px solid var(--color99);
-  border-bottom: 3px solid var(--color99);
-}
-
 header {
   text-align: right;
-  background-color: var(--color3)
+  background-color: var(--color3);
+  border-bottom: 3px solid var(--color99);
 }
 
 nav li, nav button {
@@ -84,6 +84,47 @@ section, nav, footer p {
 #interests {
   grid-area: interests;
   text-align: center;
+}
+
+#sketches-top, #sketches-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.sketch {
+  display: inline-block;
+}
+#science {
+  height: 180px;
+}
+#politics {
+  height: 100px;
+}
+#ball {
+  height: 60px;
+}
+#books {
+  height: 120px;
+}
+#guitar {
+  height: 120px;
+}
+#history {
+  height: 120px;
+}
+#leaf {
+  height: 100px;
+}
+#archdesign {
+  height: 120px;
+}
+#gaming {
+  height: 100px;
+}
+#car {
+  height: 100px;
 }
 
 .text {
@@ -169,6 +210,7 @@ footer {
 footer {
   padding: 15px auto;
   text-align: right;
+  border-top: 3px solid var(--color99);
 }
 
 h1 {
@@ -178,6 +220,7 @@ h1 {
 }
 
 h2 {
+  text-align: center;
   margin: 15px 0;
 }
 
