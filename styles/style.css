@@ -44,7 +44,7 @@ a li:hover {
 
 nav li, nav button, #buttons {
   display: inline-block;
-  margin-left: 18px;
+  margin-left: 16px;
   margin-top: 7px;
   margin-bottom: 7px;
 }
@@ -65,7 +65,7 @@ button {
 }
 
 #b1 {
-  margin-left: 22px;
+  margin-left: 20px;
 }
 #b2 {
   margin-left: 10px;
