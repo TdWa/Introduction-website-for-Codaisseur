@@ -54,9 +54,9 @@ button:hover {
   color: var(--bgColor1);
 }
 
-section, nav, footer p {
+section, nav, #footer-content {
   width: 90%;
-  min-width: 500px;
+  min-width: 480px;
   max-width: 1000px;
   margin: 0 auto;
 }
@@ -86,6 +86,13 @@ header, section {
   text-align: center;
 }
 
+#myPicture {
+  margin-bottom: 2rem;
+  width: 60%;
+  border-radius: 10%;
+  border: 2px solid var(--textColor);
+}
+
 #intro {
   grid-area: intro;
   padding: 0 5%;
@@ -98,18 +105,21 @@ header, section {
 }
 
 .sketch-container {
+  padding: 20px 0;
   display: flex;
   flex-wrap: wrap;
   text-align: center;
   justify-content: space-evenly;
   align-items: center;
 }
+.sketch-container.top {
+  padding-bottom: 0;
+}
 .sketch {
   display: inline-block;
 }
 #science {
-  /* height: 180px; */
-  height: 120px;
+  height: 170px;
 }
 #politics {
   height: 100px;
@@ -232,11 +242,6 @@ span {
   font-family: 'Nunito', sans-serif;
 }
 
-footer {
-  background-color: var(--accentColor);
-  border-top: 2px solid var(--textColor);
-}
-
 h1 {
   margin: 1rem auto;
   text-align: center;
@@ -257,15 +262,29 @@ p {
   margin-bottom: 2rem;
 }
 
-footer p {
-  padding: 1rem 0;
-  text-align: right;
-  font-size: 1.4rem;
+footer {
+  background-color: var(--accentColor);
+  border-top: 2px solid var(--textColor);
 }
 
-#myPicture {
-  margin-bottom: 2rem;
-  width: 60%;
-  border-radius: 10%;
-  border: 2px solid var(--textColor);
+#footer-content {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-top: 5px;
+}
+
+footer p {
+  padding-top: 10px;
+  padding-left: 25px;
+  min-width: 0;
+  width: fit-content;
+  display: inline-block;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+#dog {
+  height: 60px;
+  display: inline-block;
 }
