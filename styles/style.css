@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Martel:wght@400;700&family=Nunito:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Martel:wght@400;700&family=Nunito:wght@400&display=swap');
 
 * {
   padding: 0px;
@@ -30,18 +30,27 @@ body {
 }
 
 header {
+  min-width: 480px;
   text-align: right;
   background-color: var(--accentColor);
   border-bottom: 2px solid var(--textColor);
-}
-
-nav li, nav button {
-  display: inline-block;
-  margin-left: 10px;
-  margin-top: 10px;
-  margin-bottom: 10px;
   font-size: 1.7rem;
   font-weight: 700;
+}
+
+a li:hover {
+  color: rgb(201, 0, 0)
+}
+
+nav li, nav button, #buttons {
+  display: inline-block;
+  margin-left: 18px;
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+
+#buttons {
+  border-left: 2px solid var(--textColor);
 }
 
 button {
@@ -51,12 +60,26 @@ button {
   border-radius: 10px;
   font-family: 'Martel', serif;
   font-size: 1.5rem;
+  font-weight: 700;
   background-color: var(--accentColor);
 }
 
-button:hover {
+#b1 {
+  margin-left: 22px;
+}
+#b2 {
+  margin-left: 10px;
+}
+
+#b1:hover {
   background-color: var(--textColor);
   color: var(--bgColor1);
+}
+#b2:hover {
+  background-image: radial-gradient(
+    red, violet, rgb(255, 196, 0), rgb(0, 204, 255),
+    rgb(0, 160, 0), rgb(234, 0, 255)
+  );
 }
 
 section, nav, #footer-content {
@@ -198,7 +221,7 @@ header, section {
 
 .project {
   width: 300px;
-  height: 220px;
+  height: 250px;
   border: 1px solid var(--textColor);
   border-radius: 10px;
   background-color: var(--accentColor);
@@ -214,7 +237,7 @@ span {
 #tetris {
   display: grid;
   grid-template-columns: 100px 200px;
-  grid-template-rows: 100px 120px;
+  grid-template-rows: 100px 150px;
 }
 
 #tetris-image {
@@ -277,6 +300,7 @@ p {
 }
 
 footer {
+  min-width: 480px;
   background-color: var(--accentColor);
   border-top: 2px solid var(--textColor);
 }

@@ -1,11 +1,12 @@
 //alert('yes!');
 
+//Switch between light and dark theme
 const b1 = document.getElementById('b1');
 const root = document.documentElement;
 
 b1.onclick = () => {
-  if (b1.textContent === 'Dark Theme') {
-    b1.textContent = 'Light Theme'
+  if (b1.textContent === 'Dark') {
+    b1.textContent = 'Light'
     root.style.setProperty('--bgColor1', 'rgb(3, 2, 19)');
     root.style.setProperty('--bgColor2', 'rgb(11, 30, 43)');
     root.style.setProperty('--bgColor3', 'rgb(3, 2, 19)');
@@ -23,7 +24,7 @@ b1.onclick = () => {
     document.getElementById("car").src = "images/car2.png";  
     document.getElementById("dog").src = "images/dog2.png";        
   } else {
-    b1.textContent = 'Dark Theme'
+    b1.textContent = 'Dark'
     root.style.setProperty('--bgColor1', 'rgb(255, 250, 238)');
     root.style.setProperty('--bgColor2', 'rgb(212, 245, 212)');
     root.style.setProperty('--bgColor3', 'rgb(219, 226, 224)');
@@ -43,28 +44,18 @@ b1.onclick = () => {
   }
 }
 
+//Make the colors random with the random button!
+const b2 = document.getElementById('b2');
 
+b2.onclick = () => {
+  const c = [];
+  for (let i=0; i<15; i++) {
+    c.push(Math.floor(Math.random() * 256));
+  }
 
-/* 
-<img id="science" src="images/science.png" alt="science sketch">
-
-<img id="ball" src="images/ball.png" alt="football sketch">
-
-<img id="politics" src="images/politics.png" alt="politics sketch">
-
-<img id="books" src="images/books.png" alt="books sketch">
-
-<img id="guitar" src="images/guitar.png" alt="guitar sketch">
-
-<img id="history" src="images/history.png" alt="history sketch">
-
-<img id="leaf" src="images/leaf.png" alt="leaf sketch">
-
-<img id="archdesign" src="images/archdesign.png" alt="architecture and design sketch">
-
-<img id="gaming" src="images/gaming.png" alt="gaming sketch">
-
-<img id="car" src="images/car.png" alt="(electric) car sketch">
-
-<img id="dog" src="images/dog.png" alt="dog sketch"></img> 
-*/
+  root.style.setProperty('--bgColor1', `rgb(${c[0]}, ${c[1]}, ${c[2]})`);
+  root.style.setProperty('--bgColor2', `rgb(${c[3]}, ${c[4]}, ${c[5]})`);
+  root.style.setProperty('--bgColor3', `rgb(${c[6]}, ${c[7]}, ${c[8]})`);
+  root.style.setProperty('--accentColor', `rgb(${c[9]}, ${c[10]}, ${c[11]})`);
+  root.style.setProperty('--textColor', `rgb(${c[12]}, ${c[13]}, ${c[14]})`);
+}
