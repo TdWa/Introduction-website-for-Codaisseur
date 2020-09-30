@@ -13,6 +13,11 @@
   --bgColor3: rgb(219, 226, 224);
   --accentColor: rgb(255, 238, 0);
   --textColor: rgb(10, 6, 51);
+  /* --bgColor1: rgb(3, 2, 19);
+  --bgColor2: rgb(11, 30, 43);
+  --bgColor3: rgb(3, 2, 19);
+  --accentColor: rgb(167, 128, 0);
+  --textColor: rgb(255, 250, 238); */
   font-size: 10px;
 }
 
@@ -95,7 +100,7 @@ header, section {
 
 #intro {
   grid-area: intro;
-  padding: 0 5%;
+  padding-right: 20%
 }
 
 #interests {
@@ -168,6 +173,15 @@ header, section {
     "portrait portrait" 
     "intro intro" 
   }
+
+  #intro {
+    grid-area: intro;
+    padding: 0 5%;
+  }
+
+  .text {
+    padding: 0 5%;
+  }
 }
 
 #projects {
@@ -234,7 +248,7 @@ span {
 #contact-container {
   width: 95%;
   max-width: 700px;
-  padding-top: 3.5rem;
+  padding-top: 4rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   align-content: center;
