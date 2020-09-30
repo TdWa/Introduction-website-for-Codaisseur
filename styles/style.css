@@ -339,6 +339,10 @@ footer p {
     min-width: 320px;
   }
 
+  #buttons {
+    border-left: none;
+  }
+
   #contact {
     height: 300px;
   }
