@@ -297,8 +297,7 @@ footer p {
   display: inline-block;
   font-size: 1.6rem;
   font-weight: 700;
-  position: relative;
-  top: 10px;
+  padding-top: 20px;
 }
 
 #dog {
